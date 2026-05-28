@@ -37,7 +37,7 @@
                                     <div class="d-flex flex-column align-items-center gap-2 justify-content-around">
                                         <small class="fw-semibold">Carrozze</small>
                                         <p>{{$train['carriage_count']}}</p>
-                                        <small class="fw-semibold">Ritardoo</small>
+                                        <small class="fw-semibold">Ritardo</small>
                                         @if ($train['is_delayed'])
                                             <p>SI</p>
                                         @else
