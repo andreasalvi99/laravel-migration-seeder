@@ -18,26 +18,26 @@
                     @foreach ($trains as $train)
                          <div class="col">
                             <div class="card h-100 p-2">
-                                <div class="d-flex justify-content-around">
-                                    <div class="d-flex flex-column align-items-center justify-content-around gap-2">
+                                <div class="d-flex justify-content-around text-center w-100">
+                                    <div class="d-flex flex-column align-items-center justify-content-around gap-2 flex-fill w-25">
                                          <small class="fw-semibold">Compagnia</small>
                                         <p>{{$train['company_name']}}</p>
                                         <small class="fw-semibold">Codice</small>
                                         <p class="m-0">{{$train['train_code']}}</p>
                                     </div>
-                                    <div class="d-flex flex-column align-items-center justify-content-around gap-2">
+                                    <div class="d-flex flex-column align-items-center justify-content-around gap-2 flex-fill w-25">
                                         <small class="fw-semibold">Da</small>
                                         <p>{{$train['departure_station']}}</p>
                                         <small class="fw-semibold">A</small>
                                         <p> class="m-0"{{$train['arrival_station']}}</p>
                                     </div>
-                                    <div class="d-flex flex-column align-items-center gap-2 justify-content-around">
+                                    <div class="d-flex flex-column align-items-center gap-2 justify-content-around flex-fill w-25">
                                         <small class="fw-semibold">Partenza</small>
                                         <p>{{$train['departure_time']}}</p>
                                         <small class="fw-semibold">Arrivo</small>
                                         <p class="m-0">{{$train['arrival_time']}}</p>
                                     </div>
-                                    <div class="d-flex flex-column align-items-center gap-2 justify-content-around">
+                                    <div class="d-flex flex-column align-items-center gap-2 justify-content-around flex-fill w-25">
                                         <small class="fw-semibold">Carrozze</small>
                                         <p>{{$train['carriage_count']}}</p>
                                         <small class="fw-semibold">Ritardo</small>
