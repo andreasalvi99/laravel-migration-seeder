@@ -17,34 +17,34 @@
             <div class="row row-cols-1 g-3">
                     @foreach ($trains as $train)
                          <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 p-2">
                                 <div class="d-flex justify-content-around">
                                     <div class="d-flex flex-column align-items-center justify-content-around gap-2">
                                          <small class="fw-semibold">Compagnia</small>
                                         <p>{{$train['company_name']}}</p>
                                         <small class="fw-semibold">Codice</small>
-                                        <p>{{$train['train_code']}}</p>
+                                        <p class="m-0">{{$train['train_code']}}</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center justify-content-around gap-2">
                                         <small class="fw-semibold">Da</small>
                                         <p>{{$train['departure_station']}}</p>
                                         <small class="fw-semibold">A</small>
-                                        <p>{{$train['arrival_station']}}</p>
+                                        <p> class="m-0"{{$train['arrival_station']}}</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center gap-2 justify-content-around">
                                         <small class="fw-semibold">Partenza</small>
                                         <p>{{$train['departure_time']}}</p>
                                         <small class="fw-semibold">Arrivo</small>
-                                        <p>{{$train['arrival_time']}}</p>
+                                        <p class="m-0">{{$train['arrival_time']}}</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center gap-2 justify-content-around">
                                         <small class="fw-semibold">Carrozze</small>
                                         <p>{{$train['carriage_count']}}</p>
                                         <small class="fw-semibold">Ritardo</small>
                                         @if ($train['is_delayed'])
-                                            <p>SI</p>
+                                            <p class="m-0">SI</p>
                                         @else
-                                            <p>NO</p>
+                                            <p class="m-0">NO</p>
                                         @endif
                                     </div>
                                 </div>
