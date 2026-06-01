@@ -29,7 +29,7 @@
                                         <small class="fw-semibold">Da</small>
                                         <p>{{$train['departure_station']}}</p>
                                         <small class="fw-semibold">A</small>
-                                        <p> class="m-0"{{$train['arrival_station']}}</p>
+                                        <p class="m-0">{{$train['arrival_station']}}</p>
                                     </div>
                                     <div class="d-flex flex-column align-items-center gap-2 justify-content-around flex-fill w-25">
                                         <small class="fw-semibold">Partenza</small>
